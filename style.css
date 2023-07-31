@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Digital;
+  src: url(fonts/digital-7-mono.ttf);
+}
+
+body {
+  background-color: rgb(31, 41, 55);
+  color: whitesmoke;
+  font-family: Digital, monospace, sans-serif;
+  margin: auto;
+  overflow: hidden auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  display: flex;
+}
+
+.container {
+  margin-top: 10vmin;
+  display: grid;
+  border: 2vmin solid black;
+  border-radius: 5vmin;
+  background-color: black;
+  grid-template-columns: repeat(4, 9vmin);
+  grid-template-rows: repeat(5, 9vmin) minmax(9vmin, auto);
+  gap: 1vmin;
+}
+
+.display {
+  overflow: hidden;
+  font-size: 8vmin;
+  grid-column: -1 / 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+
+.num {
+  background-color: grey;
+  border: medium solid grey;
+  color: black;
+}
+
+.fun,
+.equals {
+  background-color: orange;
+  border: medium solid orange;
+  color: black;
+}
+
+.clear,
+.sign,
+.percent {
+  border: medium solid yellow;
+  background-color: yellow;
+  color: black;
+}
+
+.zero {
+  grid-column: 1 / 3;
+}
+
+button {
+  font-family: inherit;
+  font-size: 5vmin;
+  border-radius: 8vmin;
+}
+
+h1 {
+  font-family: monospace;
+  text-align: center;
+  font-size: 5vmin;
+}
